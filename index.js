@@ -335,6 +335,10 @@ CASAuthentication.prototype._handleTicket = function(req, res, next) {
         };
     }
 
+    if (this.request_client === https && process.env.NODE_TLS_REJECT_UNAUTHORIZED != 0) {
+       process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+    }
+
     var request = this.request_client.request(requestOptions, function(response) {
         response.setEncoding( 'utf8' );
         var body = '';
