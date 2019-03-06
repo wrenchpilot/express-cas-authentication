@@ -1,5 +1,9 @@
 # Express CAS Authentication
 
+Forked from [kylepixel/cas-authentication](https://github.com/kylepixel/cas-authentication), and fixed some bugs.
+
+It seems that kylepixel (author of npm package cas-authentication) no longer maintain this package, so I rename it to 'express-cas-authentication'
+
 This is a CAS authentication library designed to be used with an Express server.
 
 It provides two middleware functions for controlling access to routes:
@@ -14,12 +18,12 @@ It also provides two route endpoint functions:
 
 ## Installation
 
-    npm install cas-authentication
+    npm install express-cas-authentication
 
 ## Setup
 
 ```javascript
-var CASAuthentication = require('cas-authentication');
+var CASAuthentication = require('express-cas-authentication');
 
 var cas = new CASAuthentication({
     cas_url         : 'https://my-cas-host.com/cas',
