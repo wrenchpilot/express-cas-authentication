@@ -24,10 +24,10 @@
     "url": "https://github.com/fatsheepcn/cas-authentication.git"
   },
   "dependencies": {
-    "xml2js": "^0.4.8"
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "express": "^4.12.3",
-    "express-session": "^1.11.1"
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
   }
 }
